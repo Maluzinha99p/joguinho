@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+canvas {
+    background-color: #000;
+    border: 2px solid #fff;
+}
+.controls {
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.button {
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+.button:active {
+    background: #555;
+}
+.controls div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pac-blink {
+    animation: blink 0.5s step-start 3;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.2;
+    }
+}
